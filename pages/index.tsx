@@ -1,59 +1,38 @@
-import styles from '../styles/Home.module.css'
+import Image from "next/image";
+import { useState } from "react";
 
 export default function Home() {
+  let [name, setName] = useState("");
+
   return (
-    <div className={styles.container}>
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+    <div className="relative flex h-screen w-screen flex-col justify-center bg-gray-50 py-6 sm:py-12">
+      <Image src="/earth.jpg" layout="fill" />
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      <div className="relative bg-transparent p-2 mb-6 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10">
+        <div className="h-full w-full text-center text-2xl rounded-t-lg  text-slate-300">
+          <div className="py-2 font-mono text-4xl tracking-widest">
+            Earth Node XYZ
+          </div>
+          <div className="pb-2 font-mono text-3xl">World Mobile</div>
+          <div className="font-normal font-mono">
+            Connecting the Unconnected... One country at a time !
+          </div>
         </div>
-      </main>
+      </div>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+      <div className="relative bg-slate-300 px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10">
+        <div className="overflow-x-auto">
+          <input
+            className="bg-slate-400 p-2 rounded-lg justify-center"
+            value={name}
+            name="Name"
+            onChange={(e) => setName(e.target.value)}
+          />
+          <div className="font-mono text-lg text-slate-800 p-2">
+            My name is {name}
+          </div>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
