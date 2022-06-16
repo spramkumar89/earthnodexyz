@@ -1,25 +1,9 @@
-export default function () {
+import NavBar from "../components/navbar";
+
+export default function Home() {
   return (
-    <div className="flex flex-col">
-      <div className="flex flex-col lg:flex-row justify-center font-mono text-2xl  py-20 bg-slate-200">
-        <div className="flex flex-col justify-center lg:w-1/2 pl-10">
-          <h2 className="text-purple-700 text-3xl">
-            WMT STAKING <br />
-            <p className="text-purple-500"> World Mobile Token Stake Pool</p>
-          </h2>
-          <p className="text-slate-500 text-base font-sans">
-            Providing a professional &#8216;first className&#8217; service to
-            stake your World Mobile tokens. Participate in the sharing economy
-            and earn passive staking rewards.
-          </p>
-        </div>
-        <div className="pr-10">
-          <img
-            className="object-cover h-96 w-auto"
-            src="https://wmtstaking.com/wp-content/uploads/2022/03/1_transparent.png"
-          />
-        </div>
-      </div>
+    <div className="relative flex h-screen w-full flex-col  bg-gray-600">
+      <NavBar />
       <div className="flex flex-col lg:flex-row justify-center px-10 py-20 bg-slate-400">
         <div className="flex flex-col justify-center lg:w-1/2 pl-10">
           <div className="divide-y-4 divide-slate-800">
