@@ -5,7 +5,7 @@ export default function Home() {
     <div className="relative flex h-screen w-full flex-col  bg-gray-600">
       <NavBar />
       <div className="flex flex-col lg:flex-row justify-center px-10 py-20 bg-slate-400">
-        <div className="flex flex-col justify-center lg:w-1/2 pl-10">
+        <div className="flex flex-col justify-center lg:w-1/2 lg:pl-10">
           <div className="divide-y-4 divide-slate-800">
             <h2 className="text-4xl tracking-widest">About Us</h2>
             <div>
@@ -30,9 +30,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="pr-10">
+        <div className="lg:pr-10">
           <img
-            className="object-cover h-96 w-auto"
+            className="object-cover lg:h-96 lg:w-auto"
             src="https://wmtstaking.com/wp-content/uploads/2022/03/3_transparent-1024x682.png"
           />
         </div>

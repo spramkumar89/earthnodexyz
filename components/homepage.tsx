@@ -2,7 +2,7 @@ export default function () {
   return (
     <div className="flex flex-col">
       <div className="flex flex-col lg:flex-row justify-center font-mono text-2xl  py-20 bg-slate-200">
-        <div className="flex flex-col justify-center lg:w-1/2 pl-10">
+        <div className="flex flex-col justify-center px-2 lg:w-1/2 lg:pl-10">
           <h2 className="text-purple-700 text-3xl">
             WMT STAKING <br />
             <p className="text-purple-500"> World Mobile Token Stake Pool</p>
@@ -13,15 +13,15 @@ export default function () {
             and earn passive staking rewards.
           </p>
         </div>
-        <div className="pr-10">
+        <div className="lg:pr-10">
           <img
-            className="object-cover h-96 w-auto"
+            className="object-cover lg:h-96 lg:w-auto"
             src="https://wmtstaking.com/wp-content/uploads/2022/03/1_transparent.png"
           />
         </div>
       </div>
       <div className="flex flex-col lg:flex-row justify-center px-10 py-20 bg-slate-400">
-        <div className="flex flex-col justify-center lg:w-1/2 pl-10">
+        <div className="flex flex-col justify-center lg:w-1/2 lg:pl-10">
           <div className="divide-y-4 divide-slate-800">
             <h2 className="text-4xl tracking-widest">About Us</h2>
             <div>
@@ -46,9 +46,9 @@ export default function () {
             </div>
           </div>
         </div>
-        <div className="pr-10">
+        <div className="lg:pr-10">
           <img
-            className="object-cover h-96 w-auto"
+            className="object-cover lg:h-96 lg:w-auto"
             src="https://wmtstaking.com/wp-content/uploads/2022/03/3_transparent-1024x682.png"
           />
         </div>
